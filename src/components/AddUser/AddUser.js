@@ -1,6 +1,6 @@
 import React from 'react';
-import { Form, FormGroup } from 'react-bootstrap';
-import { Label } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import {Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
 const AddUser = () => {
     return (
@@ -8,8 +8,10 @@ const AddUser = () => {
             <Form>
                 <FormGroup>
                     <Label>Add User</Label>
-                    <input type ="text" placeholder='Add user'></input>
-                </FormGroup>
+                    <Input type ="text" placeholder='Add user'></Input>
+                   </FormGroup>
+                <Button type='submit'>Submit</Button>
+                <Link to ='/' className='btn btn-danger ml-12' >Cancel</Link>
             </Form>
         </div>
     );
