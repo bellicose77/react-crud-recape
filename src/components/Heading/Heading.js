@@ -1,11 +1,20 @@
 import React from 'react';
-import { Navbar } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { Button, Nav, Navbar, NavbarBrand, NavItem } from 'reactstrap';
 
 const Heading = () => {
     return (
         <div>
-         <Navbar>
-        
+         <Navbar color='dark'>
+          <NavbarBrand href='/'></NavbarBrand>
+          <Nav>
+              <NavItem>
+                  <Link to="/adduser">
+                  <Button className='btn btn-primary'>Add user</Button>
+                  </Link>
+                 
+              </NavItem>
+          </Nav>
         </Navbar>  
         </div>
     );
