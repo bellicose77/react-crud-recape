@@ -6,7 +6,7 @@ const Heading = () => {
     return (
         <div>
          <Navbar color='dark'>
-          <NavbarBrand href='/'></NavbarBrand>
+          <NavbarBrand href='/'>My Team</NavbarBrand>
           <Nav>
               <NavItem>
                   <Link to="/adduser">
