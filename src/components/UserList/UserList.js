@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, ListGroup, ListGroupItem } from 'reactstrap';
 
 const UserList = () => {
     return (
        <ListGroup className='mt-4'>
-        <ListGroupItem>
+        <ListGroupItem className='d-flex '>
             <strong>User name</strong>
-            <div>
-                <Button className='btn btn-warning'>Edit</Button>
+            <div className='ml-auto'>
+                <Link to ='edit/1' className='btn btn-warning mr-1'>Edit</Link>
                 <Button className='btn btn-danger'>Delete</Button>
             </div>
         </ListGroupItem>
