@@ -7,7 +7,7 @@ import EditUser from './components/EditUser/EditUser';
 
 function App() {
   return (
-    <div className="App">
+    <div className=''>
       <BrowserRouter>
       <Routes>
         <Route  path='/' element={<Home/>}/>

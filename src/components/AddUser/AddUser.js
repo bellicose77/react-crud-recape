@@ -1,9 +1,16 @@
 import React from 'react';
+import { Form, FormGroup } from 'react-bootstrap';
+import { Label } from 'reactstrap';
 
 const AddUser = () => {
     return (
         <div>
-            <h2>This is add userpage</h2>
+            <Form>
+                <FormGroup>
+                    <Label>Add User</Label>
+                    <input type ="text" placeholder='Add user'></input>
+                </FormGroup>
+            </Form>
         </div>
     );
 };
