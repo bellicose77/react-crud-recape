@@ -7,12 +7,12 @@ import EditUser from './components/EditUser/EditUser';
 
 function App() {
   return (
-    <div className=''>
+    <div style={{maxWidth: '30rem', margin:'4rem auto'}}>
       <BrowserRouter>
       <Routes>
         <Route  path='/' element={<Home/>}/>
         <Route path="adduser" element={<AddUser/>}/>
-        <Route path='edit:id' element={<EditUser/>}/>
+        <Route path='edit/:id' element={<EditUser/>}/>
       </Routes>
       </BrowserRouter>
     
