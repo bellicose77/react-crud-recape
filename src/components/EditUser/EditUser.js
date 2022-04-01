@@ -6,7 +6,7 @@ const EditUser = () => {
     return (
         <Form>
         <FormGroup>
-            <Label>Add User</Label>
+            <Label>Edit User</Label>
             <Input type ="text" placeholder='Add user'></Input>
            </FormGroup>
         <Button type='submit'>Edit</Button>
