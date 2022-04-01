@@ -4,7 +4,7 @@ import {Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
 const AddUser = () => {
     return (
-        <div>
+      
             <Form>
                 <FormGroup>
                     <Label>Add User</Label>
@@ -13,7 +13,7 @@ const AddUser = () => {
                 <Button type='submit'>Submit</Button>
                 <Link to ='/' className='btn btn-danger ml-12' >Cancel</Link>
             </Form>
-        </div>
+       
     );
 };
 

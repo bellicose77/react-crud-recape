@@ -1,10 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
 const EditUser = () => {
     return (
-        <div>
-            <h2>This is EditUser page</h2>
-        </div>
+        <Form>
+        <FormGroup>
+            <Label>Add User</Label>
+            <Input type ="text" placeholder='Add user'></Input>
+           </FormGroup>
+        <Button type='submit'>Edit</Button>
+        <Link to ='/' className='btn btn-danger ml-12' >Cancel</Link>
+    </Form>
     );
 };
 
