@@ -3,9 +3,13 @@ import { Link } from 'react-router-dom';
 import {Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
 const AddUser = () => {
-    const [username,setUsername]=useState('');
-    const [useremail,setUseremail]=useState('');
-    const[userpass,setUserpass]=useState('');
+    const [uservalue,setUsername]=useState({
+        username:'',
+        email:'',
+        password:''
+    });
+    // const [useremail,setUseremail]=useState('');
+    // const[userpass,setUserpass]=useState('');
     const handlename = (e)=>{
         const inputValue = e.target.value;
         setUsername(inputValue);
@@ -34,16 +38,19 @@ const AddUser = () => {
                     <Label>Add Name</Label>
                     <Input type ="text" 
                     placeholder='Add Name' 
+                    name="username"
                     onChange={handlename}
                     ></Input>
                     <Label>Add Email</Label>
                     <Input type ="email" 
+                    name="email"
                     placeholder='Add email'
                     onChange={handleEmail}
                     ></Input>
                     <Label>Add password</Label>
                     <Input type ="text"
                      placeholder='Add password'
+                     name="password"
                      onChange = {handlePassword}
                     ></Input>
                    </FormGroup>
