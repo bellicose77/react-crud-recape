@@ -16,15 +16,22 @@ const AddUser = () => {
         if(nameValue==='username'){
             setUservalue({...uservalue,username:inputValue})
         }
+        else if(nameValue==='email'){
+            setUservalue({...uservalue,email:inputValue}) 
+        }
+        else if(nameValue==='password'){
+            setUservalue({...uservalue,password:nameValue})
+        }
         
     }
+    console.log(uservalue);
     
     const handleSubmit = (e)=>{
         e.preventDefault()
         const data ={
-            name:username,
-            email:useremail,
-            pass:userpass
+            username:uservalue.username,
+            email:uservalue.email,
+            password:uservalue.password
         }
         console.log(data)
     }
@@ -36,19 +43,19 @@ const AddUser = () => {
                     <Input type ="text" 
                     placeholder='Add Name' 
                     name="username"
-                    onChange={handlename}
+                    onChange={handleFormValue}
                     ></Input>
                     <Label>Add Email</Label>
                     <Input type ="email" 
                     name="email"
                     placeholder='Add email'
-                    onChange={handleEmail}
+                    onChange={handleFormValue}
                     ></Input>
                     <Label>Add password</Label>
                     <Input type ="text"
                      placeholder='Add password'
                      name="password"
-                     onChange = {handlePassword}
+                     onChange = {handleFormValue}
                     ></Input>
                    </FormGroup>
                 <Button type='submit'>Submit</Button>
