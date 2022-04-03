@@ -6,14 +6,28 @@ const AddUser = () => {
     const [username,setUsername]=useState('');
     const [useremail,setUseremail]=useState('');
     const[userpass,setUserpass]=useState('');
+    const handlename = (e)=>{
+        const inputValue = e.target.value;
+        setUsername(inputValue);
+    }
+    const handleEmail = (e)=>{
+        const inputValue = e.target.value;
+        setUseremail(inputValue);
+    }
     return (
       
             <Form>
                 <FormGroup>
                     <Label>Add Name</Label>
-                    <Input type ="text" placeholder='Add Name'></Input>
+                    <Input type ="text" 
+                    placeholder='Add Name' 
+                    onChange={handlename}
+                    ></Input>
                     <Label>Add Email</Label>
-                    <Input type ="text" placeholder='Add email'></Input>
+                    <Input type ="email" 
+                    placeholder='Add email'
+                    onChange={handleEmail}
+                    ></Input>
                     <Label>Add password</Label>
                     <Input type ="text" placeholder='Add password'></Input>
                    </FormGroup>
