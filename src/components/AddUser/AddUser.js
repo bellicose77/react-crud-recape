@@ -3,15 +3,19 @@ import { Link } from 'react-router-dom';
 import {Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
 const AddUser = () => {
-    const [uservalue,setUsername]=useState({
+    const [uservalue,setUservalue]=useState({
         username:'',
         email:'',
         password:''
     });
     // const [useremail,setUseremail]=useState('');
     // const[userpass,setUserpass]=useState('');
-    const handlename = (e)=>{
+    const handleFormValue = (e)=>{
+        const nameValue=e.target.name;
         const inputValue = e.target.value;
+        if(nameValue==='username'){
+            setUser
+        }
         setUsername(inputValue);
     }
     const handleEmail = (e)=>{
