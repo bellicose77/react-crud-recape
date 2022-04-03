@@ -14,18 +14,11 @@ const AddUser = () => {
         const nameValue=e.target.name;
         const inputValue = e.target.value;
         if(nameValue==='username'){
-            setUser
+            setUservalue({...uservalue,username:inputValue})
         }
-        setUsername(inputValue);
+        
     }
-    const handleEmail = (e)=>{
-        const inputValue = e.target.value;
-        setUseremail(inputValue);
-    }
-    const handlePassword = (e)=>{
-        const inputValue = e.target.value;
-        setUserpass(inputValue)
-    }
+    
     const handleSubmit = (e)=>{
         e.preventDefault()
         const data ={
