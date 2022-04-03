@@ -18,9 +18,17 @@ const AddUser = () => {
         const inputValue = e.target.value;
         setUserpass(inputValue)
     }
+    const handleSubmit = ()=>{
+        const data ={
+            name:username,
+            email:useremail,
+            pass:userpass
+        }
+        console.log(data)
+    }
     return (
       
-            <Form>
+            <Form onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label>Add Name</Label>
                     <Input type ="text" 
