@@ -24,7 +24,7 @@ const AddUser = () => {
         }
         
     }
-    console.log(uservalue);
+   // console.log(uservalue);
     
     const handleSubmit = (e)=>{
         e.preventDefault()
