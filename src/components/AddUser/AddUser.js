@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
 const AddUser = () => {
+    const [username,setUsername]=useState('');
+    const [useremail,setUseremail]=useState('');
+    const[userpass,setUserpass]=useState('');
     return (
       
             <Form>
