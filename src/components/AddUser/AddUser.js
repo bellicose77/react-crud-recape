@@ -14,6 +14,10 @@ const AddUser = () => {
         const inputValue = e.target.value;
         setUseremail(inputValue);
     }
+    const handlePassword = (e)=>{
+        const inputValue = e.target.value;
+        setUserpass(inputValue)
+    }
     return (
       
             <Form>
@@ -29,7 +33,10 @@ const AddUser = () => {
                     onChange={handleEmail}
                     ></Input>
                     <Label>Add password</Label>
-                    <Input type ="text" placeholder='Add password'></Input>
+                    <Input type ="text"
+                     placeholder='Add password'
+                     onChange = {handlePassword}
+                    ></Input>
                    </FormGroup>
                 <Button type='submit'>Submit</Button>
                 <Link to ='/' className='btn btn-danger ml-12' >Cancel</Link>
