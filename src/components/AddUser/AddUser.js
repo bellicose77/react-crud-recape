@@ -18,7 +18,8 @@ const AddUser = () => {
         const inputValue = e.target.value;
         setUserpass(inputValue)
     }
-    const handleSubmit = ()=>{
+    const handleSubmit = (e)=>{
+        e.preventDefault()
         const data ={
             name:username,
             email:useremail,
