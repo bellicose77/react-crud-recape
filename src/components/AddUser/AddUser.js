@@ -40,20 +40,17 @@ const AddUser = () => {
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
                     <Label>Add Name</Label>
-                    <Input type ="text" 
-                    placeholder='Add Name' 
+                    <Input type ="text"  
                     name="username"
                     onChange={handleFormValue}
                     ></Input>
                     <Label>Add Email</Label>
                     <Input type ="email" 
                     name="email"
-                    placeholder='Add email'
                     onChange={handleFormValue}
                     ></Input>
                     <Label>Add password</Label>
                     <Input type ="text"
-                     placeholder='Add password'
                      name="password"
                      onChange = {handleFormValue}
                     ></Input>
