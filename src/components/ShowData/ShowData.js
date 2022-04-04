@@ -1,6 +1,7 @@
 import React from 'react';
 
-const ShowData = ({uservalue}) => {
+const ShowData = ({uservalue}) => { 
+    console.log("show",uservalue)
     return (
         <div>
             <p>{uservalue.username}</p>
