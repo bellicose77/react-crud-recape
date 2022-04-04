@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {Button, Form, FormGroup, Input, Label } from 'reactstrap';
+import UserList from '../UserList/UserList';
 
 const AddUser = () => {
     const [uservalue,setUservalue]=useState({
@@ -37,6 +38,7 @@ const AddUser = () => {
         console.log(data)
     }
     return (
+        <>
       
             <Form onSubmit={handleSubmit}>
                 <FormGroup>
@@ -62,6 +64,8 @@ const AddUser = () => {
                 <Button type='submit'>Submit</Button>
                 <Link to ='/' className='btn btn-danger ml-12' >Cancel</Link>
             </Form>
+            <UserList uservalue={uservalue}></UserList>
+            </>
        
     );
 };
