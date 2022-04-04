@@ -1,9 +1,11 @@
 import React from 'react';
 
-const ShowData = () => {
+const ShowData = ({uservalue}) => {
     return (
         <div>
-            
+            <p>{uservalue.username}</p>
+            <p>{uservalue.email}</p>
+            <p>{uservalue.password}</p>
         </div>
     );
 };
