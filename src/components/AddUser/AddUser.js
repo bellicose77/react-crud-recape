@@ -13,7 +13,7 @@ const AddUser = () => {
     const handleFormValue = (e)=>{
         const nameValue=e.target.name;
         const inputValue = e.target.value;
-        setUservalue({...uservalue,nameValue:inputValue})
+        setUservalue({...uservalue,[nameValue]:inputValue})
         // if(nameValue==='username'){
         //     setUservalue({...uservalue,username:inputValue})
         // }
