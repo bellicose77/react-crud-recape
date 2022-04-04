@@ -4,11 +4,7 @@ import {Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import UserList from '../UserList/UserList';
 
 const AddUser = () => {
-    const [uservalue,setUservalue]=useState({
-        username:'',
-        email:'',
-        password:''
-    });
+   
     // const [useremail,setUseremail]=useState('');
     // const[userpass,setUserpass]=useState('');
     const handleFormValue = (e)=>{
@@ -64,7 +60,6 @@ const AddUser = () => {
                 <Button type='submit'>Submit</Button>
                 <Link to ='/' className='btn btn-danger ml-12' >Cancel</Link>
             </Form>
-            <UserList uservalue={uservalue}></UserList>
             </>
        
     );
