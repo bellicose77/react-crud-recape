@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ShowData = ({uservalue}) => { 
-    console.log("show",uservalue)
+    // console.log("show",uservalue)
     return (
         <div>
             <p>{uservalue.username}</p>

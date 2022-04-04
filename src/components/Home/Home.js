@@ -14,6 +14,7 @@ const handleFormValue = (e)=>{
     const inputValue = e.target.value;
     setUservalue({...uservalue,[nameValue]:inputValue})
 }
+console.log(uservalue)
     return (
         <div>
           <Heading></Heading>

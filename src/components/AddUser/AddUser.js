@@ -12,7 +12,7 @@ const AddUser = ({handleFormValue,uservalue,setUservalue}) => {
             email:uservalue.email,
             password:uservalue.password
         }
-        console.log(data)
+        // console.log(data)
     }
     return (
         <>
@@ -38,7 +38,8 @@ const AddUser = ({handleFormValue,uservalue,setUservalue}) => {
                      onChange = {handleFormValue}
                     ></Input>
                    </FormGroup>
-                <Button type='submit'>Submit</Button>
+                   <Link to='/show'> <Button type='submit'>Submit</Button></Link>
+               
                 <Link to ='/' className='btn btn-danger ml-12' >Cancel</Link>
             </Form>
             </>
