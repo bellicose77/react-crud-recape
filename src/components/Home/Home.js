@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Heading from '../Heading/Heading';
+import ShowData from '../ShowData/ShowData';
 import UserList from '../UserList/UserList';
 
 const Home = () => {
@@ -16,7 +17,9 @@ const handleFormValue = (e)=>{
     return (
         <div>
           <Heading></Heading>
-          <UserList></UserList>
+          <UserList handleFormValue={handleFormValue} uservalue={uservalue} setUservalue={setUservalue}></UserList>
+          <ShowData uservalue={uservalue}></ShowData>
+
         </div>
     );
 };
