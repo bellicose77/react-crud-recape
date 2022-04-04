@@ -1,25 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {Button, Form, FormGroup, Input, Label } from 'reactstrap';
-import UserList from '../UserList/UserList';
 
 const AddUser = ({handleFormValue,uservalue,setUservalue}) => {
    
-    // const [useremail,setUseremail]=useState('');
-    // const[userpass,setUserpass]=useState('');
-    
-        // if(nameValue==='username'){
-        //     setUservalue({...uservalue,username:inputValue})
-        // }
-        // else if(nameValue==='email'){
-        //     setUservalue({...uservalue,email:inputValue}) 
-        // }
-        // else if(nameValue==='password'){
-        //     setUservalue({...uservalue,password:nameValue})
-        // }
-        
-    
-   // console.log(uservalue);
     
     const handleSubmit = (e)=>{
         e.preventDefault()
