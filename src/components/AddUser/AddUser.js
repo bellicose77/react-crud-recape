@@ -13,15 +13,16 @@ const AddUser = () => {
     const handleFormValue = (e)=>{
         const nameValue=e.target.name;
         const inputValue = e.target.value;
-        if(nameValue==='username'){
-            setUservalue({...uservalue,username:inputValue})
-        }
-        else if(nameValue==='email'){
-            setUservalue({...uservalue,email:inputValue}) 
-        }
-        else if(nameValue==='password'){
-            setUservalue({...uservalue,password:nameValue})
-        }
+        setUservalue({...uservalue,nameValue:inputValue})
+        // if(nameValue==='username'){
+        //     setUservalue({...uservalue,username:inputValue})
+        // }
+        // else if(nameValue==='email'){
+        //     setUservalue({...uservalue,email:inputValue}) 
+        // }
+        // else if(nameValue==='password'){
+        //     setUservalue({...uservalue,password:nameValue})
+        // }
         
     }
    // console.log(uservalue);
