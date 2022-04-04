@@ -14,11 +14,21 @@ const handleFormValue = (e)=>{
     const inputValue = e.target.value;
     setUservalue({...uservalue,[nameValue]:inputValue})
 }
-console.log(uservalue)
+const handleSubmit = (e)=>{
+  e.preventDefault()
+  const data ={
+      username:uservalue.username,
+      email:uservalue.email,
+      password:uservalue.password
+  }
+  // console.log(data)
+  console.log(data);
+}
+
     return (
         <div>
           <Heading></Heading>
-          <UserList handleFormValue={handleFormValue} uservalue={uservalue} setUservalue={setUservalue}></UserList>
+          <UserList handleFormValue={handleFormValue} uservalue={uservalue} handleSubmit={handleSubmit}></UserList>
           <ShowData uservalue={uservalue}></ShowData>
 
         </div>
